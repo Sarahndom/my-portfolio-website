@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio — Sarah Ndom — Frontend Developer">
+    <title>Sarah Ndom — Developer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-row">
+            <a class="logo" href="#">Sarah Ndom</a>
+            <button id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+            <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a class="cta" href="./resume/My-Resume.pdf" target="_blank">Resume</a>
+                <!-- <a class="cta" href="./resume/My-Resume.pdf" download>Download Resume</a> -->
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <p class="section-intro">A selection of my recent front-end work.</p>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card fade">
+                        <img src="./images/Screenshot 2025-12-02 214636.png" alt="Weather App preview">
+                        <div class="project-content">
+                            <h3>Weather App</h3>
+                            <p>A responsive weather application that fetches real-time data from an external API and
+                                displays it cleanly with temperature unit switching.</p>
+                            <a class="btn small" href="https://weather-app-cocm.vercel.app/" target="_blank">Live</a>
+                            <a class="btn ghost small" href="https://github.com/Sarahndom/weather-app"
+                                target="_blank">Code</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 – Ticket Management App -->
+                    <article class="project-card fade">
+                        <!-- <video autoplay muted loop playsinline>
+                            <source src="./videos/ticket-app-video.mp4" type="video/mp4">
+                        </video> -->
+                        <video controls>
+                            <source src="./videos/ticket-app-video.mp4" type="video/mp4">
+                        </video>
+
+
+                        <div class="project-content">
+                            <h3>Ticket Management App</h3>
+                            <p>A React-based ticket app built with Vite. Includes routing, authentication, localStorage
+                                data handling, and toast notifications.</p>
+
+                            <a class="btn small"
+                                href="https://ticket-app-ql9q-f7qyboy0e-sarahs-projects-d4ca6872.vercel.app/"
+                                target="_blank">Live</a>
+                            <a class="btn ghost small" href="https://github.com/Sarahndom/ticket-app"
+                                target="_blank">Code</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 – Browser Extensions Manager -->
+                    <article class="project-card fade">
+                        <video controls>
+                            <source src="./videos/extension-video-demo.mp4" type="video/mp4">
+                        </video>
+                        <!-- <img src="./images/Screenshot 2025-12-05 135957.png" alt="Browser Extensions Manager preview"> -->
+                        <div class="project-content">
+                            <h3>Browser Extensions Manager UI</h3>
+                            <p>A Frontend Mentor challenge featuring extension toggling, filtering, theme switcher, and
+                                responsive layout using HTML, CSS, and JS.</p>
+
+                            <a class="btn small" href="https://browser-manager-extension.netlify.app/"
+                                target="_blank">Live</a>
+                            <a class="btn ghost small" href="https://github.com/Sarahndom/Browser-extension.git"
+                                target="_blank">Code</a>
+                        </div>
+                    </article>
+
+
+                    <article class="project-card fade">
+                        <img src="./images/Screenshot 2025-12-05 135957.png" alt="Browser Extensions Manager preview">
+                        <div class="project-content">
+                            <h3>Browser Extensions Manager UI</h3>
+                            <p>A Frontend Mentor challenge featuring extension toggling, filtering, theme switcher, and
+                                responsive layout using HTML, CSS, and JS.</p>
+
+                            <a class="btn small" href="https://browser-manager-extension.netlify.app/"
+                                target="_blank">Live</a>
+                            <a class="btn ghost small" href="https://github.com/Sarahndom/Browser-extension.git"
+                                target="_blank">Code</a>
+                        </div>
+                    </article>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <div class="container hero-inner">
+                <div>
+                    <h1>Hi, I’m <span class="accent">Sarah Ndom</span></h1>
+                    <p class="tagline">
+                        I’m a front-end developer focused on building accessible, high-performance interfaces that feel
+                        clean,
+                        intuitive, and effortless to use. I care deeply about creating digital experiences that balance
+                        strong
+                        visual design with real usability, ensuring every element has purpose and clarity.<br><br>
+
+                        I enjoy turning ideas into functional, production-ready code. Whether improving responsiveness,
+                        refining interactions, or solving layout challenges, I approach each project with creativity and
+                        precision. I’m constantly learning — experimenting with new tools and pushing myself to write
+                        cleaner,
+                        more maintainable code.<br><br>
+
+                        My goal is simple: to build interfaces that help people accomplish things easily, beautifully,
+                        and
+                        without friction.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a class="btn" href="#projects">View Projects</a>
+                        <a class="btn ghost" href="mailto:sarahndom620@gmail.com">Contact Me</a>
+                    </div>
+                </div>
+
+                <div class="hero-photo" aria-hidden="true">
+                    <img src="./images/image.png" id="photo" alt="Sarah's photo">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+
+                <p>
+                    I’m a front-end developer who specializes in building clean, intuitive, and accessible interfaces.
+                    I focus on crafting experiences that are visually clear, responsive across devices, and optimized
+                    for performance.
+                </p>
+
+                <p>
+                    My approach blends design awareness with engineering precision. I enjoy translating ideas and UI
+                    designs into functional,
+                    production-ready code while maintaining best practices in accessibility, responsiveness, and
+                    maintainability.
+                </p>
+
+                <p>
+                    I’m constantly learning — exploring new technologies, improving my workflow, and sharpening my UI/UX
+                    knowledge.
+                    My goal is to build digital experiences that feel effortless, beautiful, and user-centered.
+                </p>
+
+                <h3>Core Skills</h3>
+                <ul class="skills-list">
+                    <li>HTML / CSS / JavaScript</li>
+                    <li>Responsive design</li>
+                    <li>UI/UX implementation</li>
+                    <li>Accessibility (WCAG)</li>
+                    <li>Performance optimization</li>
+                    <li>API Integration</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Want to work together or have a question? Send a quick message.</p>
+
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/mldqlkrl" method="POST">
+                    <label>
+                        <span>Name</span>
+                        <input type="text" name="name" required placeholder="Your name">
+                    </label>
+
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" required placeholder="you@example.com">
+                    </label>
+
+                    <label>
+                        <span>Message</span>
+                        <textarea name="message" rows="6" required
+                            placeholder="Hi — I’d like to talk about..."></textarea>
+                    </label>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn">Send message</button>
+                        <div id="form-status" role="status" aria-live="polite"></div>
+                    </div>
+                </form>
+
+                <p class="muted">You can reach me directly at
+                    <a href="mailto:sarahndom620@gmail.com">sarahndom620@gmail.com</a>
+                    or contact
+                    <a href="tel:+2347077335336">+2347077335336</a>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <p>© <span id="year"></span> Sarah Ndom — Built with ❤️</p>
+            <div class="social">
+                <a href="https://github.com/Sarahndom" aria-label="GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/sarah-ndom001" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
