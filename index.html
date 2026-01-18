@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="index.css">
+
+    <script src="./index.js" defer></script>
 </head>
 
 <body>
@@ -24,13 +26,52 @@
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
-                <a class="cta" href="./resume/My-Resume.pdf" target="_blank">Resume</a>
+                <a class="cta" href="./resume/Newest-cv.pdf" target="_blank">Resume</a>
                 <!-- <a class="cta" href="./resume/My-Resume.pdf" download>Download Resume</a> -->
             </nav>
         </div>
     </header>
 
     <main>
+
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <div class="container hero-inner">
+                <div>
+                    <h1>Hi, I’m <span class="accent">Sarah Ndom</span></h1>
+                    <p class="tagline">
+                        I am a Software Developer specialized in engineering high-performance, accessible user
+                        interfaces that
+                        seamlessly bridge the gap between complex logic and intuitive design. I am driven by the
+                        philosophy
+                        that software should not only be visually compelling but architecturally sound, ensuring every
+                        component
+                        serves a definitive purpose with absolute clarity.<br><br>
+
+                        I thrive at the intersection of design systems and functional engineering, transforming abstract
+                        concepts into robust, production-ready code. From optimizing rendering performance to
+                        architecting
+                        scalable layouts, I approach every technical challenge with a balance of creative
+                        problem-solving
+                        and rigorous precision. My commitment to excellence is rooted in a culture of continuous
+                        learning
+                        and the pursuit of clean, maintainable, and highly efficient codebases.<br><br>
+
+                        My mission is to engineer digital environments that empower users to achieve their goals
+                        effortlessly, elegantly, and without technical friction.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a class="btn" href="#projects">View Projects</a>
+                        <a class="btn ghost" href="mailto:sarahndom620@gmail.com">Contact Me</a>
+                    </div>
+                </div>
+
+                <div class="hero-photo" aria-hidden="true">
+                    <img src="./images/image.png" id="photo" alt="Sarah's photo">
+                </div>
+            </div>
+        </section>
 
         <!-- PROJECTS -->
         <section id="projects" class="projects">
@@ -138,40 +179,7 @@
             </div>
         </section>
 
-        <!-- HERO -->
-        <section id="hero" class="hero">
-            <div class="container hero-inner">
-                <div>
-                    <h1>Hi, I’m <span class="accent">Sarah Ndom</span></h1>
-                    <p class="tagline">
-                        I’m a front-end developer focused on building accessible, high-performance interfaces that feel
-                        clean,
-                        intuitive, and effortless to use. I care deeply about creating digital experiences that balance
-                        strong
-                        visual design with real usability, ensuring every element has purpose and clarity.<br><br>
 
-                        I enjoy turning ideas into functional, production-ready code. Whether improving responsiveness,
-                        refining interactions, or solving layout challenges, I approach each project with creativity and
-                        precision. I’m constantly learning — experimenting with new tools and pushing myself to write
-                        cleaner,
-                        more maintainable code.<br><br>
-
-                        My goal is simple: to build interfaces that help people accomplish things easily, beautifully,
-                        and
-                        without friction.
-                    </p>
-
-                    <div class="hero-cta">
-                        <a class="btn" href="#projects">View Projects</a>
-                        <a class="btn ghost" href="mailto:sarahndom620@gmail.com">Contact Me</a>
-                    </div>
-                </div>
-
-                <div class="hero-photo" aria-hidden="true">
-                    <img src="./images/image.png" id="photo" alt="Sarah's photo">
-                </div>
-            </div>
-        </section>
 
         <!-- ABOUT SECTION -->
         <section id="about" class="about">
@@ -259,7 +267,6 @@
         </div>
     </footer>
 
-    <script src="index.js"></script>
 </body>
 
 </html>
