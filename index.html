@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <link rel="icon" href="./images/icon-192.png" type="image/png">
+
     <link rel="stylesheet" href="index.css">
 
     <script src="./index.js" defer></script>
@@ -38,31 +40,23 @@
             <div class="container hero-inner">
                 <div>
                     <h1>Hi, I’m <span class="accent">Sarah Ndom</span></h1>
+
                     <p class="tagline">
-                        I am a Software Developer specialized in engineering high-performance, accessible user
-                        interfaces that
-                        seamlessly bridge the gap between complex logic and intuitive design. I am driven by the
-                        philosophy
-                        that software should not only be visually compelling but architecturally sound, ensuring every
-                        component
-                        serves a definitive purpose with absolute clarity.<br><br>
+                        I am a <strong>Software Developer</strong> dedicated to building high-performance, accessible,
+                        and scalable digital products. I bridge the gap between complex backend logic and intuitive
+                        frontend design.
 
-                        I thrive at the intersection of design systems and functional engineering, transforming abstract
-                        concepts into robust, production-ready code. From optimizing rendering performance to
-                        architecting
-                        scalable layouts, I approach every technical challenge with a balance of creative
-                        problem-solving
-                        and rigorous precision. My commitment to excellence is rooted in a culture of continuous
-                        learning
-                        and the pursuit of clean, maintainable, and highly efficient codebases.<br><br>
+                        <br>
+                        <br>
 
-                        My mission is to engineer digital environments that empower users to achieve their goals
-                        effortlessly, elegantly, and without technical friction.
+                        I don’t just write code; I engineer solutions. From optimizing design systems to architecting
+                        production-ready applications, I focus on delivering clean, maintainable codebases that drive
+                        user engagement and business growth.
                     </p>
 
                     <div class="hero-cta">
                         <a class="btn" href="#projects">View Projects</a>
-                        <a class="btn ghost" href="mailto:sarahndom620@gmail.com">Contact Me</a>
+                        <a class="btn ghost" href="#contact">Contact Me</a>
                     </div>
                 </div>
 
@@ -76,13 +70,24 @@
         <section id="projects" class="projects">
             <div class="container">
                 <h2>Projects</h2>
-                <p class="section-intro">A selection of my recent front-end work.</p>
+                <p class="section-intro">A selection of my recent work.</p>
 
                 <div class="projects-grid">
 
 
                     <!-- PROJECT 1 -->
-
+                    <article class="project-card fade">
+                        <img src="./images/ticket.png" alt="Conference Ticket Generator preview">
+                        <div class="project-content">
+                            <h3>Conference Ticket Generator</h3>
+                            <p>A high-performance generator featuring <strong>complex form validation</strong> and local
+                                file processing via the <strong>File API</strong>. Engineered for real-time data binding
+                                to deliver instant, personalized event tickets.</p>
+                            <a class="btn small" href="https://ticket-gene.netlify.app/" target="_blank">Live</a>
+                            <a class="btn ghost small" href="https://github.com/Sarahndom/Conference-ticket-generator"
+                                target="_blank">Code</a>
+                        </div>
+                    </article>
 
                     <article class="project-card fade">
                         <video controls>
@@ -90,29 +95,14 @@
                         </video>
                     </article>
 
-
-                    <article class="project-card fade">
-                        <img src="./images/ticket.png" alt="Conference Ticket Generator preview">
-                        <div class="project-content">
-                            <h3>Conference Ticket Generator</h3>
-                            <p>A dynamic web application featuring complex form validation, local file processing via
-                                the File API for instant avatar previews, and real-time data binding to generate
-                                personalized event tickets.</p>
-                            <a class="btn small" href="https://ticket-gene.netlify.app/" target="_blank">Live</a>
-                            <a class="btn ghost small" href="https://github.com/Sarahndom/Conference-ticket-generator"
-                                target="_blank">Code</a>
-                        </div>
-                    </article>
-
-
-
                     <!-- Project 2 -->
                     <article class="project-card fade">
                         <img src="./images/weather-app.png" alt="Weather App preview">
                         <div class="project-content">
                             <h3>Weather App</h3>
-                            <p>A responsive weather application that fetches real-time data from an external API and
-                                displays it cleanly with temperature unit switching.</p>
+                            <p>A responsive application integrated with the <strong>OpenWeather API</strong>. Features
+                                optimized <strong>fetching logic</strong>, error handling, and dynamic UI updates based
+                                on real-time meteorological data.</p>
                             <a class="btn small" href="https://weather-app-cocm.vercel.app/" target="_blank">Live</a>
                             <a class="btn ghost small" href="https://github.com/Sarahndom/weather-app"
                                 target="_blank">Code</a>
@@ -129,8 +119,12 @@
 
                         <div class="project-content">
                             <h3>Ticket Management App</h3>
-                            <p>A React-based ticket app built with Vite. Includes routing, authentication, localStorage
-                                data handling, and toast notifications.</p>
+                            <p>
+                                A high-performance <strong>Vanilla JavaScript</strong> application architected with
+                                <strong>modular ES6 logic</strong>. Engineered a custom
+                                <strong>client-side router</strong>, persistent localStorage state management,
+                                and a real-time notification system for seamless task tracking.
+                            </p>
 
                             <a class="btn small"
                                 href="https://ticket-app-ql9q-f7qyboy0e-sarahs-projects-d4ca6872.vercel.app/"
@@ -146,8 +140,9 @@
                         <img src="./images/extensions.png" alt="Browser Extensions Manager preview">
                         <div class="project-content">
                             <h3>Browser Extensions Manager UI</h3>
-                            <p>A Frontend Mentor challenge featuring extension toggling, filtering, theme switcher, and
-                                responsive layout using HTML, CSS, and JS.</p>
+                            <p>An interactive dashboard showcasing advanced <strong>DOM manipulation</strong>,
+                                state-based filtering, and a custom <strong>Theme Switcher</strong> architected for
+                                cross-browser responsiveness.</p>
 
                             <a class="btn small" href="https://browser-manager-extension.netlify.app/"
                                 target="_blank">Live</a>
@@ -210,33 +205,36 @@
                 <h2>About Me</h2>
 
                 <p>
-                    I’m a front-end developer who specializes in building clean, intuitive, and accessible interfaces.
-                    I focus on crafting experiences that are visually clear, responsive across devices, and optimized
-                    for performance.
+                    I thrive at the intersection of engineering and user experience. My background in software
+                    development allows me to translate abstract concepts into robust, efficient code. I believe that
+                    great software should be invisible—so intuitive that the user achieves their goals without technical
+                    friction.
                 </p>
+
+                <br>
 
                 <p>
-                    My approach blends design awareness with engineering precision. I enjoy translating ideas and UI
-                    designs into functional,
-                    production-ready code while maintaining best practices in accessibility, responsiveness, and
-                    maintainability.
+                    Currently, I specialize in the <strong>React and Next.js ecosystem</strong>, with a strong emphasis
+                    on <strong>TypeScript</strong> for type-safe, enterprise-grade development. My process is rooted in
+                    performance optimization, responsive architecture, and a "mobile-first" philosophy.
                 </p>
+
+                <br>
 
                 <p>
-                    I’m constantly learning — exploring new technologies, improving my workflow, and sharpening my UI/UX
-                    knowledge.
-                    My goal is to build digital experiences that feel effortless, beautiful, and user-centered.
+                    When I’m not coding, I’m sharpening my UI/UX knowledge or exploring new ways to automate workflows
+                    through CI/CD. My goal is simple: to build digital environments that are as beautiful as they are
+                    functional.
                 </p>
 
-                <h3>Core Skills</h3>
+
+                <h3>Core Stack & Expertise</h3>
                 <ul class="skills-list">
-                    <li>HTML / CSS / JavaScript</li>
-                    <li>Responsive design</li>
-                    <li>UI/UX implementation</li>
-                    <li>Accessibility (WCAG)</li>
-                    <li>Performance optimization</li>
-                    <li>API Integration</li>
-                    <li>Git & GitHub</li>
+                    <li><strong>Languages:</strong> TypeScript, JavaScript (ES6+), HTML5, CSS3</li>
+                    <li><strong>Frameworks:</strong> React.js, Next.js, Tailwind CSS</li>
+                    <li><strong>Tools:</strong> Git/GitHub, GitHub Actions (CI/CD), Redux Toolkit</li>
+                    <li><strong>Backend/Data:</strong> REST APIs, Supabase, Firebase</li>
+                    <li><strong>Engineering:</strong> Responsive Architecture, SEO, Accessibility (WCAG)</li>
                 </ul>
             </div>
         </section>
@@ -270,23 +268,29 @@
                     </div>
                 </form>
 
-                <p class="muted">You can reach me directly at
-                    <a href="mailto:sarahndom620@gmail.com">sarahndom620@gmail.com</a>
-                    or contact
-                    <a href="tel:+2347077335336">+2347077335336</a>
-                </p>
-            </div>
+
         </section>
 
     </main>
 
     <footer class="site-footer">
+
         <div class="container footer-row">
-            <p>© <span id="year"></span> Sarah Ndom — Built with ❤️</p>
+            <p class="muted">You can reach me directly at <br>
+                <a class="link" href="mailto:sarahndom620@gmail.com">sarahndom620@gmail.com</a>
+                <a class="link" href="tel:+2347077335336">+2347077335336</a>
+            </p>
+
             <div class="social">
-                <a href="https://github.com/Sarahndom" aria-label="GitHub">GitHub</a>
-                <a href="https://www.linkedin.com/in/sarah-ndom001" aria-label="LinkedIn">LinkedIn</a>
+                <a class="link" href="https://github.com/Sarahndom" aria-label="GitHub">GitHub</a>
+                <a class="link" href="https://www.linkedin.com/in/sarah-ndom001" aria-label="LinkedIn">LinkedIn</a>
+
+                <p>© <span id="year"></span> Sarah Ndom — Built with ❤️</p>
+
             </div>
+
+        </div>
+
         </div>
     </footer>
 

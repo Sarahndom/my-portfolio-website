@@ -7,7 +7,7 @@
     --accent: #2563eb;
 
     --text: #1d1d1f;
-    --accent: #007aff;
+    --accen: #007aff;
     --header-bg-color: rgba(0, 122, 255, 0.9);
 
     --radius: 12px;
@@ -92,8 +92,13 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.primary-nav a:last-child {
+.primary-nav a:last-child:hover {
     border-bottom: none;
+    color: #0f1724;
+}
+
+.primary-nav a:hover {
+    color: #0f1724;
 }
 
 .primary-nav.open {
@@ -133,6 +138,10 @@ body {
     margin: 0
 }
 
+.hero h1:hover {
+    color: var(--accent)
+}
+
 .hero-photo {}
 
 #photo {
@@ -144,6 +153,11 @@ body {
 
 .accent {
     color: var(--accent)
+}
+
+.accent:hover {
+    color: #0f1724;
+
 }
 
 .tagline {
@@ -166,15 +180,35 @@ body {
     display: inline-block
 }
 
+.btn:hover {
+    background-color: var(--accen);
+}
+
 .btn.ghost {
     background: transparent;
     color: var(--accent);
     border: 1px solid var(--accent)
 }
 
+.btn.ghost:hover {
+    background: var(--muted);
+}
+
 .btn.small {
     padding: 0.35rem 0.5rem;
     font-size: 0.9rem
+}
+
+h2 {
+    text-align: center;
+}
+
+h2:hover {
+    color: var(--accen);
+}
+
+.section-intro:hover {
+    color: #6b7280;
 }
 
 /* About */
@@ -251,7 +285,11 @@ body {
 }
 
 .contact-form label {
-    display: block
+    display: block;
+}
+
+.contact-form label:hover {
+    color: var(--accent);
 }
 
 .contact-form input,
@@ -265,13 +303,29 @@ body {
 .form-actions {
     display: flex;
     gap: 1rem;
-    align-items: center
+    align-items: center;
+
+}
+
+.form-actions .btn {
+    border: none;
+    background: var(--accent);
+    color: white;
+    padding: 0.6rem 0.9rem;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block
+}
+
+
+.form-actions .btn:hover {
+    background-color: var(--accen);
+    color: #0f1724;
 }
 
 #form-status {
     color: var(--muted)
 }
-
 
 /* Footer */
 .site-footer {
@@ -283,9 +337,18 @@ body {
 .footer-row {
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 }
 
+.muted {
+    color: var(--text);
+}
+
+.link:hover {
+    color: var(--muted);
+}
+
+.social {}
 
 /* Fade-in on scroll */
 .fade {
@@ -327,6 +390,7 @@ body {
 }
 
 .project-card video {
+    padding: 0.5rem;
     position: absolute;
     top: 0;
     left: 0;
